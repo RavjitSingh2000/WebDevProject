@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+}
+header {
+    background-color: black;
+    border-bottom: 5px solid red;
+}
+header h1 {
+    font-size: 38px;
+    color: goldenrod;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+header p {
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+#main-article {
+    width: 75%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+}
+#main-article p {
+    font-size: 20px;
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+}
+/*Section properties for historic timeline contents*/
+section {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+}
+section header {
+    background-color: white;
+
+}
+section header h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    padding: 5px;
+}
+.div1-img {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.div1-img img {
+    width: 80%;
+    height: 80%;
+}
+.div2 {
+    padding: 5px;
+}
+.div2 p {
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 8px;
+    line-height: 1.7;
+    color: rgb(88, 87, 87);
+}
+
+footer{
+    background-color: black;
+    padding: 14px;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-areas: "h6 h6" "navfooter1 navfooter2";
+    font-family: 'Raleway', sans-serif;
+}
+footer h6 {
+    grid-area: h6;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+footer nav ul {
+    list-style-type: none;
+}
+footer nav ul li {
+    padding: 10px;
+    text-decoration: none;
+}
+footer a {
+    text-decoration: none;
+}
+#nav_footer1 {
+    padding: 10px;
+    grid-area: navfooter1;  
+    color: white; 
+}
+#nav_footer1 a {
+    color: white;
+}
+#nav_footer1 a:hover {
+    color: red;
+    text-decoration: underline;
+    background-color: white;
+    padding: 8px;
+}
+#nav_footer2 {
+    padding: 10px;
+    grid-area: navfooter2;
+    color: white;
+}
+#nav_footer2 ul {
+    list-style-type: none;
+}
+#nav_footer2 li {
+    padding: 5px;
+}
+#nav_footer2 img {
+    display: block;
+    height: 10%;
+    width: 10%;
+}
+
+.panel {/*dropdown contetnt properties*/
+    padding: 0 20px;
+    display: none;
+    /*background-color: white;
+    overflow: hidden;*/
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 8px;
+    line-height: 1.7;
+    color: rgb(88, 87, 87);
+    transition: 0.2s ease-out;
+}
+
+.dropDown {
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.dropDown:hover,.active {
+    background-color: grey;
+    color: black;
+}
+
+.dropDown:after {
+    content: '\002B';
+    color: white;
+    float: right;
+}
+.active:after {
+    content: "\2212";
+}
+
+@media (max-width: 600px) {
+    footer{
+        background-color: black;
+        padding: 14px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        display: grid;
+        grid-template-columns: fr;
+        grid-template-rows: 0.5fr 2fr 2fr;
+        grid-template-areas: "h6" "navfooter1" "navfooter2";
+    }
+    footer img {
+        display: block;
+        height: 90%;
+        width: 25%;
+    }
+}
+

@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #011d35;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+header h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Anton', sans-serif;
+    color: rgb(70, 209, 233);
+}
+header img {
+    width: 400px;
+    margin: auto;
+}
+
+#main-nav {
+    background-color: rgb(70, 209, 233);
+}
+
+#main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+#main-nav li {
+    padding: 10px;
+}
+#main-nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+.nav_a:hover {
+    background: rgb(255,0,250);
+    background: linear-gradient(90deg, rgba(255,0,250,0.6566951566951567) 25%, rgba(249,0,0,0.8760683760683761) 50%, rgba(233,231,6,0.8233618233618234) 75%, rgba(7,255,0,0.7621082621082621) 100%);
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+}
+/*History article properties*/
+#history {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+#history h1 {
+    color: #011d35;
+    font-size: 28px;
+    font-family: 'Ubuntu', arial;
+    background-color: rgb(70, 209, 233);
+    padding: 10px;
+    border-left: 5px solid #011d35;
+}
+#history img {
+    width: 50%;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+#history p {
+    padding: 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    line-height: 1.7;
+}
+
+/*Primitive beginnings properties*/
+#primitive {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+#primitive h1{
+    color: #011d35;
+    font-size: 28px;
+    font-family: 'Ubuntu', arial;
+    background-color: rgb(70, 209, 233);
+    padding: 10px;
+    border-left: 5px solid #011d35;
+}
+#primitive section {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+.img-center {
+    width: 30%;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+#primitive section h3 {
+    font-size: 22px;
+    font-family: 'Ubuntu', arial;
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+#primitive section p { 
+    padding: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    line-height: 1.7;
+}
+/*modern theories article properties, includes section proerties as well*/
+#modern-theories {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+#modern-theories h1 {
+    color: #011d35;
+    font-size: 28px;
+    font-family: 'Ubuntu', arial;
+    background-color: rgb(70, 209, 233);
+    padding: 10px;
+    border-left: 5px solid #011d35;
+}
+#modern-theories p {
+    padding: 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    line-height: 1.7;
+}
+#modern-theories section {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+#modern-theories section h3 {
+    font-size: 22px;
+    font-family: 'Ubuntu', arial;
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+#modern-theories section p {
+    padding: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    line-height: 1.7;
+}
+.balloons-ul {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+.balloons-ul li {
+    font-size: 16px;
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    background-color: #011d35;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-areas: "h6 h6" "navfooter1 navfooter2";
+    padding: 10px;
+}
+footer h6 {
+    grid-area: h6;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Ubuntu', arial;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(70, 209, 233);
+    font-family: 'Anton', sans-serif;
+}
+footer nav ul {
+    list-style-type: none;
+}
+footer nav ul li {
+    padding: 10px;
+    text-decoration: none;
+}
+
+#nav_footer1 {
+    padding: 10px;
+    grid-area: navfooter1;  
+    color: white; 
+}
+#nav_footer1 a {
+    font-size: 18px;
+    color: rgb(70, 209, 233);
+}
+#nav_footer1 a:hover {
+    text-decoration: underline;
+    color: #011d35;
+    background-color: rgb(70, 209, 233);
+    padding: 8px;
+}
+#nav_footer2 {
+    padding: 10px;
+    grid-area: navfooter2;
+    color: white;
+}
+#nav_footer2 ul {
+    list-style-type: none;
+}
+#nav_footer2 li {
+    padding: 5px;
+}
+#nav_footer2 img {
+    display: block;
+    height: 10%;
+    width: 10%;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: grid;
+        grid-template-rows: 1.5fr 0.5fr;
+        grid-template-areas: "img" "heading";
+    }
+    header img {
+        grid-area: img;
+        display: block;
+        width: 99%;
+    }
+    header h1 {
+        grid-area: heading;
+    }
+
+}

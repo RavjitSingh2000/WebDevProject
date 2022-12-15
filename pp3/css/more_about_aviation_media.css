@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-areas: "h1 h1 img" 
+                         "nav1 nav2 img";
+}
+
+header h1 {
+    grid-area: h1;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(114, 12, 4);
+    font-size: 42px;
+    padding: 10px;
+    margin: 20px auto 0 auto;
+    text-decoration: underline;
+}
+
+header img {
+    grid-area: img;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header nav {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 8px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul li {
+    padding: 10px;
+    margin: 2px 8px 2px 8px;
+    list-style-type: none;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav_a:hover {
+    color: red;
+    font-weight: 900;
+    padding: 8px;
+    border: 2px black solid;
+}
+
+#nav1 {
+    grid-area: nav1;
+}
+#nav2{
+    grid-area: nav2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+    grid-template-areas: "article1 article2 "
+                         "article3 article4" 
+                         "article5 article6"
+                         "article7 article8 "
+                         "article9 article10" 
+                         "article11 article12"
+                         "playWith playWith";
+    padding: 10px;
+    grid-gap: 5px;
+    background-color: rgb(200, 196, 196);
+}
+
+article {
+    border: 2px solid black;/*<- to be removed*/
+    border-radius: 8px;
+    padding: 5px;
+    background-color: white;
+}
+article h3 {
+    font-size: 22px;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid black;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color: black;
+}
+article img {
+    display: block;
+    margin: 5px auto 5px auto;
+    width: 70%;
+    height: 70%;
+}
+article iframe {
+    display: block;
+    margin: 5px auto 5px auto;
+    width: 75%;
+    height: 80%;
+}
+#article1 {
+    grid-area: article1;
+}
+#article2 {
+    grid-area: article2;
+}
+#article3 {
+    grid-area: article3;
+}
+#article4 {
+    grid-area: article4;
+}
+#article5 {
+    grid-area: article5;
+}
+#article6 {
+    grid-area: article6;
+}
+#article7 {
+    grid-area: article7;
+}
+#article8 {
+    grid-area: article8;
+}
+#article9 {
+    grid-area: article9;
+}
+#article10 {
+    grid-area: article10;
+}
+#article11 {
+    grid-area: article11;
+}
+#article12 {
+    grid-area: article12;
+}
+
+#playWith {
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+    grid-area: playWith;
+}
+#slideShow {
+    margin: 2px auto 12px auto;
+    display: block;
+}
+
+#playWith h3 {
+    font-size: 26px;
+    padding: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+#firstImage, #lastImage, #previous, #next, #auto {
+    background-color: rgb(69, 69, 232);
+    color: white;
+    font-size: 18px;
+    padding: 4px;
+    display: inline-block;/*<- not working*/
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2px auto 2px auto;
+}
+
+#firstImage:hover, #lastImage:hover, #previous:hover, #next:hover, #auto:hover {
+    background-color: rgb(48, 48, 141);
+}
+
+footer {
+    background-color: black;
+    padding: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-areas: "h6 h6"
+                         "navfooter1 navfooter2";
+}
+footer h6 {
+    grid-area: h6;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+#nav_footer1 {
+    padding: 10px;
+    grid-area: navfooter1;  
+    color: white; 
+}
+#nav_footer1 a {
+    color: white;
+}
+#nav_footer1 a:hover {
+    color: red;
+    text-decoration: underline;
+    background-color: white;
+    padding: 8px;
+    font-weight: 900;
+}
+#nav_footer2 {
+    padding: 10px;
+    grid-area: navfooter2;
+    color: white;
+}
+#nav_footer2 img {
+    display: block;
+    height: 10%;
+    width: 10%;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1.4fr 0.5fr 1fr 1fr;
+        grid-template-areas: "img" 
+                             "h1"
+                             "nav1"
+                             "nav2";
+    }
+    header img {
+        grid-area: img;
+        display: block;
+        width: 100%;
+        height: 70%;
+    }
+    header h1 {
+        padding: 2px;
+        margin-top: 5px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 5fr;
+        grid-template-areas: "article1" 
+                             "article2 "
+                             "article3"
+                             "article4" 
+                             "article5"
+                             "article6"
+                             "article7"
+                             "article8 "
+                             "article9"
+                             "article10" 
+                             "article11"
+                             "article12"
+                             "playWith";
+        padding: 2px;
+        grid-gap: 10px;
+    }
+    footer{
+        background-color: black;
+        padding: 14px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        display: grid;
+        grid-template-columns: fr;
+        grid-template-rows: 0.5fr 2fr 2fr;
+        grid-template-areas: "h6" "navfooter1" "navfooter2";
+    }
+    footer img {
+        display: block;
+        height: 15%;
+        width: 15%;
+    }
+}
